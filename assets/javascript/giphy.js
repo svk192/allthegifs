@@ -1,4 +1,4 @@
-var topics = ["baby", "happy", "cats"];
+var topics = ["Bill Murray", "happy", "panda", "adorable","oprah"];
 
 for(i=0; i < topics.length; i++){
     
@@ -9,6 +9,7 @@ function createbutton (topicName){
     var button = $("<button>");
     button.attr("data-topic",topicName);
     button.text(topicName);
+    button.addClass("button");
     $("#buttons").append(button);
 
 }
