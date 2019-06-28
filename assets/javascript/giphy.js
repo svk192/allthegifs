@@ -20,6 +20,7 @@ $("#submit").on("click", function(event) {
     topics.push(topic);
     createbutton(topic);
     $("#topic").val('');
+
 });
 
 
@@ -68,6 +69,7 @@ $("#gifcontainer").empty();
           
           topicDiv.append(topicImage);
           topicDiv.append(p);
+          topicDiv.addClass("gifdiv");
 
           // Prependng the animalDiv to the HTML page in the "#gifs-appear-here" div
           $("#gifcontainer").prepend(topicDiv);
